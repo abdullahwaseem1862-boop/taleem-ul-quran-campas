@@ -1,0 +1,6 @@
+{
+  "name": "Taleem-ul-Quran Campus",
+  "description": "Online Quran & Islamic Studies Academy offering Noorani Qaida, Tajweed, Hifz, Tafseer, and interactive student learning.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
