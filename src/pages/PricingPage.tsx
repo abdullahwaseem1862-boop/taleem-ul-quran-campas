@@ -181,14 +181,14 @@ export const PricingPage: React.FC<PricingPageProps> = ({ onOpenFreeTrial }) => 
               <div key={idx} className="bg-[#061a14] gold-border rounded-sm overflow-hidden">
                 <button
                   onClick={() => setOpenFaqIndex(isOpen ? null : idx)}
-                  className="w-full text-left p-4 sm:p-5 font-serif font-bold text-sm sm:text-base text-[#f2f2e8] flex items-center justify-between gap-4 hover:text-[#d4af37] transition-colors"
+                  className="w-full text-left rtl:text-right p-4 sm:p-5 font-serif font-bold text-sm sm:text-base text-[#f2f2e8] flex items-center justify-between gap-4 hover:text-[#d4af37] transition-colors"
                 >
-                  <span>{faq.q}</span>
-                  {isOpen ? <ChevronUp className="w-4 h-4 text-[#d4af37]" /> : <ChevronDown className="w-4 h-4 text-[#b4c3bd]" />}
+                  <span>{faq.question}</span>
+                  {isOpen ? <ChevronUp className="w-4 h-4 text-[#d4af37] shrink-0" /> : <ChevronDown className="w-4 h-4 text-[#b4c3bd] shrink-0" />}
                 </button>
                 {isOpen && (
-                  <div className="px-4 pb-5 sm:px-5 text-xs text-[#b4c3bd] leading-relaxed border-t border-[#d4af37]/15 pt-3">
-                    {faq.a}
+                  <div className="px-4 pb-5 sm:px-5 text-xs text-[#b4c3bd] leading-relaxed border-t border-[#d4af37]/15 pt-3 animate-fadeIn">
+                    {faq.answer}
                   </div>
                 )}
               </div>

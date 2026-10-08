@@ -1,6 +1,6 @@
 {
-  "name": "Taleem-ul-Quran Campus",
-  "description": "Online Quran & Islamic Studies Academy offering Noorani Qaida, Tajweed, Hifz, Tafseer, and interactive student learning.",
+  "name": "Taleem Ul Quran Campus",
+  "description": "Taleem Ul Quran Campus (تعلیم القرآن آن لائن اکیڈمی) – Premium international online Quran academy offering Noorani Qaida, Tajweed, Hifz, Tafseer, and live 1-on-1 classes.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

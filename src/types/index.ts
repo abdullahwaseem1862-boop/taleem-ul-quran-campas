@@ -1,3 +1,14 @@
+export type Language = 'en' | 'ur' | 'ar' | 'bn' | 'hi' | 'tr';
+
+export interface LanguageConfig {
+  code: Language;
+  name: string;
+  nativeName: string;
+  dir: 'ltr' | 'rtl';
+  flag: string;
+  fontClass: string;
+}
+
 export interface Course {
   id: string;
   title: string;
@@ -49,6 +60,19 @@ export interface ContactFormData {
   message: string;
 }
 
+export interface DemoBookingFormData {
+  fullName: string;
+  age: string;
+  country: string;
+  whatsapp: string;
+  email: string;
+  courseId: string;
+  preferredDays: string;
+  preferredTime: string;
+  teacherPreference: 'No Preference' | 'Male Teacher' | 'Female Teacher';
+  message: string;
+}
+
 export interface Testimonial {
   id: string;
   parentName: string;
@@ -66,4 +90,46 @@ export interface DailyVerse {
   surahNumber: number;
   ayahNumber: number;
   explanation: string;
+}
+
+export interface StudentCategory {
+  id: string;
+  title: string;
+  arabicTitle: string;
+  description: string;
+  icon: string;
+  features: string[];
+}
+
+export interface WhyChooseItem {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface HowItWorksStep {
+  step: number;
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface BlogArticle {
+  id: string;
+  title: string;
+  category: 'Quran' | 'Tajweed' | 'Islamic Studies' | 'Duas' | 'Salah' | 'Parenting' | 'Quran Learning Tips';
+  readTime: string;
+  date: string;
+  summary: string;
+  content: string[];
+  authenticReferences: string[];
+  author: string;
+}
+
+export interface FAQItem {
+  id: string;
+  question: string;
+  answer: string;
+  category: 'General' | 'Classes' | 'Teachers' | 'Fees & Tech';
 }

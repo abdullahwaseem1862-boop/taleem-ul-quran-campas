@@ -1,0 +1,17 @@
+{
+  "name": "Taleem Ul Quran Campus",
+  "short_name": "TQC Academy",
+  "description": "Learn the Holy Quran online with certified teachers worldwide. 1-on-1 Noorani Qaida, Tajweed, Hifz, and Tafseer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#04120f",
+  "theme_color": "#04120f",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
